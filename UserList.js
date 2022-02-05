@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { AppContext } from "../Context";
+import pic from "./images/6.jpg";
 
 const UserList = () => {
   const {
@@ -116,7 +117,7 @@ const UserList = () => {
               <td>{date}</td>
               <td>{description}</td>
               <td>{user_name}</td>
-              <td>{image}</td>
+              <td>{image} <img src={pic} /></td>
               <td>
                 <button
                   className="btn default-btn"
